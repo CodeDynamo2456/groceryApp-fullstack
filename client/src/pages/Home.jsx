@@ -1,4 +1,5 @@
 import BestSeller from "../componets/BestSeller"
+import BottomBanner from "../componets/BottomBanner"
 import Categories from "../componets/Categories"
 import MainBanner from "../componets/MainBanner"
 
@@ -8,6 +9,7 @@ const Home = () => {
         <MainBanner></MainBanner>
         <Categories></Categories>
         <BestSeller></BestSeller>
+        <BottomBanner></BottomBanner>
     </div>
   )
 }
