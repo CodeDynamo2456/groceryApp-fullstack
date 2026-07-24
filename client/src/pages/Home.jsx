@@ -1,6 +1,7 @@
 import BestSeller from "../componets/BestSeller"
 import BottomBanner from "../componets/BottomBanner"
 import Categories from "../componets/Categories"
+// import Login from "../componets/Login"
 import MainBanner from "../componets/MainBanner"
 import NewsLetter from "../componets/NewsLetter"
 
@@ -11,7 +12,7 @@ const Home = () => {
         <Categories></Categories>
         <BestSeller></BestSeller>
         <BottomBanner></BottomBanner>
-        <NewsLetter></NewsLetter>
+        <NewsLetter></NewsLetter>   
     </div>
   )
 }
