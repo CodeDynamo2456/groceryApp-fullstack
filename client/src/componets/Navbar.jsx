@@ -6,7 +6,7 @@ import ProfileIcon from '../assets/profile-icon.png'
 import { useAppContext } from '../context/AppContext'
 const Navbar = () => {
      const [open, setOpen] = useState(false)
-     const {user,setuser,showUserLogin,setShowUserLogin,navigate,searchQuery,setSearchQuery} =  useAppContext() 
+     const {user,setuser,showUserLogin,setShowUserLogin,navigate,searchQuery,setSearchQuery,getCartCount} =  useAppContext() 
      const [islogin,setislogin] = useState(true)
      const logout = async ()=>{
         setuser(null)
@@ -46,7 +46,7 @@ const Navbar = () => {
                         <path d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0" stroke="#615fff" stroke-linecap="round" stroke-linejoin="round" />
                     </svg> */}
                     <img src={cartlogo} className='h-7' alt="" />
-                    <button className="absolute -top-2 -right-3 text-xs text-white bg-green-600 w-[18px] h-[18px] rounded-full">3</button>
+                    <button className="absolute -top-2 -right-3 text-xs text-white bg-green-600 w-[18px] h-[18px] rounded-full">{getCartCount()}</button>
                 </div>
 
                 {!user ? (
