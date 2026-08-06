@@ -44,10 +44,24 @@ export const AppContextProvider =({children})=>{
 
     const updateCartItem = (ItemId,quantity)=>{
         let cartData = structuredClone(cartItems)
-        cartItems[ItemId] = quantity;
+        cartData[ItemId] = quantity;
         setCartItems(cartData)
         toast.success("Cart Updated")
+
     }
+
+
+
+//     const updateCartItem = (itemId, quantity) => {
+//     let cartData = structuredClone(cartItems);
+
+//     cartData[itemId] = quantity; // ✅ Update the cloned object
+
+//     setCartItems(cartData);
+//     toast.success("Cart Updated");
+// };
+
+
 
     // Remove Product from Cart
 

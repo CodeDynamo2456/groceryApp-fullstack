@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div className='relative group'>
                     <img className='h-9' src={ProfileIcon} alt="" />
                     <ul className='hidden group-hover:block absolute top-10 right-0 bg-white shadow border border-gray-200 py-2.5 w-30 rounded-sm text-sm z-40'>
-                        <li onClick={()=>navigate("/'myorders")} className='p-1.5 pl-3 hover:bg-blue-50 cursor-pointer'>My Orders</li>
+                        <li onClick={()=>navigate("/my-orders")} className='p-1.5 pl-3 hover:bg-blue-50 cursor-pointer'>My Orders</li>
                         <li onClick={logout} className='p-1.5 pl-3 hover:bg-blue-50 cursor-pointer'>Logout</li>
                     </ul>
                 </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <NavLink to='/' onClick={()=>setOpen(false)} className="block">Home</NavLink>
                 <NavLink to='/products' onClick={()=>setOpen(false)} className="block">All Products</NavLink>
 
-                {user && <NavLink to="/myorders" className="block">My Orders</NavLink>}  
+                {user && <NavLink to="/my-orders" className="block">My Orders</NavLink>}  
                 
                 
                 <NavLink to="/Contact" className="block">Contact</NavLink>
